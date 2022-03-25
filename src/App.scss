@@ -1,0 +1,61 @@
+@import "node_modules/vanilla-framework";
+@include vanilla;
+
+.containter {
+  padding: 1rem;
+}
+
+.spaces-vertical {
+  margin-bottom: 1rem;
+}
+
+.p-text {
+  &--weight-normal {
+    font-weight: $font-weight-regular-text;
+  }
+
+  &--style-normal {
+    font-style: normal;
+  }
+
+  &--style-italic {
+    font-style: italic;
+  }
+}
+
+hr.separator--dotted {
+  background: $color-x-light;
+  border-top: 1px dotted $color-mid-light;
+}
+
+.p-card {
+  &--image-large {
+    height: 11rem;
+    object-fit: cover;
+  }
+
+  &--top-higlight {
+    @include vf-highlight-bar(#a87ca0, "top", true);
+    overflow: hidden;
+  }
+
+  &--custom-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+
+  &--fill-height {
+    height: 100%;
+  }
+
+  &--flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--footer {
+    margin-top: auto;
+  }
+}
